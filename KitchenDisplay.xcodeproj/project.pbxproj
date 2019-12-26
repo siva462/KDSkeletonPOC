@@ -68,9 +68,17 @@
 		430D7CAF23B4B58200F99993 /* Scenes  */ = {
 			isa = PBXGroup;
 			children = (
+				430D7CB023B4C50700F99993 /* New Group */,
 				43C6F69423B1E8C000DE61BA /* KDSettings */,
 			);
 			path = "Scenes ";
+			sourceTree = "<group>";
+		};
+		430D7CB023B4C50700F99993 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		43C6F67623B1E88C00DE61BA = {

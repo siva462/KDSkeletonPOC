@@ -12,18 +12,18 @@
         <!--Settings View Controller-->
         <scene sceneID="UQN-mS-ahx">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="viz-Ua-E0G" customClass="KDSettingsViewController" customModule="KDSkeletonPOC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="viz-Ua-E0G" customClass="KDSettingsViewController" customModule="KitchenDisplay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2mY-bC-lMd">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rLa-hp-22W" userLabel="settingView" customClass="KDView" customModule="KDSkeletonPOC" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rLa-hp-22W" userLabel="settingView" customClass="KDView" customModule="KitchenDisplay" customModuleProvider="target">
                                 <rect key="frame" x="42" y="54" width="940" height="660"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgB-9B-QvX" userLabel="headerView">
                                         <rect key="frame" x="0.0" y="0.0" width="940" height="60"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGY-LA-Zz3" userLabel="titleLabel" customClass="KDLabel" customModule="KDSkeletonPOC" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGY-LA-Zz3" userLabel="titleLabel" customClass="KDLabel" customModule="KitchenDisplay" customModuleProvider="target">
                                                 <rect key="frame" x="449" y="19.5" width="42" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="pyc-Cl-Z0A"/>
@@ -47,7 +47,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cx-Fe-6Si" userLabel="footerView">
                                         <rect key="frame" x="0.0" y="560" width="940" height="100"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfO-7l-DOX" userLabel="backButton" customClass="KDButton" customModule="KDSkeletonPOC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfO-7l-DOX" userLabel="backButton" customClass="KDButton" customModule="KitchenDisplay" customModuleProvider="target">
                                                 <rect key="frame" x="345" y="20" width="250" height="60"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -81,18 +81,143 @@
                                         </constraints>
                                         <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="108" id="LOh-Ho-lwH" userLabel="connectionSettingCell">
-                                                <rect key="frame" x="0.0" y="55.5" width="900" height="108"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConnectionCell" rowHeight="105" id="ZMD-xv-9xg" userLabel="KDConnectionSettingCell">
+                                                <rect key="frame" x="0.0" y="55.5" width="900" height="105"/>
                                                 <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LOh-Ho-lwH" id="hZa-pi-F9c">
-                                                    <rect key="frame" x="0.0" y="0.0" width="900" height="107.5"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZMD-xv-9xg" id="8uo-VG-d96">
+                                                    <rect key="frame" x="0.0" y="0.0" width="900" height="104.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POS application(iPad) to..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeP-GM-yfo" userLabel="cellTitleLabel" customClass="KDLabel" customModule="View" customModuleProvider="target">
+                                                            <rect key="frame" x="15" y="15" width="200" height="20.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20.5" id="0Is-Cf-3xN"/>
+                                                                <constraint firstAttribute="width" constant="200" id="Wsq-gD-fPZ"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="connectionPOSSetting"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDJ-hw-Lj8" customClass="KDButton" customModule="View" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="900" height="104.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                                            <state key="normal">
+                                                                <color key="titleColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="localizedTitleNumberOfLines">
+                                                                    <integer key="value" value="0"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOc-IW-d7G" userLabel="stateLabel" customClass="KDLabel" customModule="View" customModuleProvider="target">
+                                                            <rect key="frame" x="374" y="65" width="56" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="56" id="Vey-kG-1Fl"/>
+                                                                <constraint firstAttribute="height" constant="21" id="pwv-NF-2wC"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="state"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mln-DD-x7V" userLabel="connectionStateLabel" customClass="KDLabel" customModule="View" customModuleProvider="target">
+                                                            <rect key="frame" x="430" y="65" width="80" height="21.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="80" id="caq-2E-2K2"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                            <color key="textColor" red="0.86274509799999999" green="0.23529411759999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="disconnected"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3T-MZ-Zqd" userLabel="disconnectionButton" customClass="KDButton" customModule="View" customModuleProvider="target">
+                                                            <rect key="frame" x="590" y="51.5" width="120" height="48"/>
+                                                            <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="48" id="42m-f1-kh0"/>
+                                                                <constraint firstAttribute="width" constant="120" id="AGa-VR-0bt"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                            <state key="normal" title="Disconnect">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleForNormal" value="disconnection"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkH-eC-jBk" userLabel="connectionButton" customClass="KDButton" customModule="View" customModuleProvider="target">
+                                                            <rect key="frame" x="722" y="51.5" width="175" height="48"/>
+                                                            <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="175" id="VfQ-RV-nnp"/>
+                                                                <constraint firstAttribute="height" constant="48" id="zbu-Wq-lD7"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                            <state key="normal" title="Connect">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleForNormal" value="connection"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the IP address of the POS application(iPad) to link" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIi-2f-drN" userLabel="IPAddressLabel">
+                                                            <rect key="frame" x="465.5" y="0.0" width="424.5" height="51.5"/>
+                                                            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="connectionPOSIP"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dx-rf-leE" userLabel="IPAddressPlaceHolderLabel">
+                                                            <rect key="frame" x="890" y="0.0" width="0.0" height="51.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="ZeP-GM-yfo" firstAttribute="leading" secondItem="8uo-VG-d96" secondAttribute="leading" constant="15" id="0LI-1b-QAk"/>
+                                                        <constraint firstAttribute="trailing" secondItem="DDJ-hw-Lj8" secondAttribute="trailing" id="1lU-Sg-Meb"/>
+                                                        <constraint firstItem="ZeP-GM-yfo" firstAttribute="top" secondItem="8uo-VG-d96" secondAttribute="top" constant="15" id="3n6-GU-TMN"/>
+                                                        <constraint firstItem="8dx-rf-leE" firstAttribute="bottom" secondItem="hIi-2f-drN" secondAttribute="bottom" id="EN7-Xf-zE0"/>
+                                                        <constraint firstAttribute="trailing" secondItem="hIi-2f-drN" secondAttribute="trailing" constant="10" id="I6Q-xo-hit"/>
+                                                        <constraint firstItem="wkH-eC-jBk" firstAttribute="top" secondItem="S3T-MZ-Zqd" secondAttribute="top" id="Rxx-mG-OKj"/>
+                                                        <constraint firstItem="S3T-MZ-Zqd" firstAttribute="centerY" secondItem="aOc-IW-d7G" secondAttribute="centerY" id="SQ9-OD-ksx"/>
+                                                        <constraint firstItem="hIi-2f-drN" firstAttribute="top" secondItem="8uo-VG-d96" secondAttribute="top" id="Uet-no-iSn"/>
+                                                        <constraint firstAttribute="bottom" secondItem="wkH-eC-jBk" secondAttribute="bottom" constant="5" id="WfT-OC-UdU"/>
+                                                        <constraint firstItem="hIi-2f-drN" firstAttribute="trailing" secondItem="8dx-rf-leE" secondAttribute="trailing" id="gFf-iZ-Sh1"/>
+                                                        <constraint firstAttribute="bottom" secondItem="DDJ-hw-Lj8" secondAttribute="bottom" id="ged-Ur-2Pu"/>
+                                                        <constraint firstItem="mln-DD-x7V" firstAttribute="centerY" secondItem="aOc-IW-d7G" secondAttribute="centerY" id="hMk-Cc-ows"/>
+                                                        <constraint firstAttribute="trailing" secondItem="wkH-eC-jBk" secondAttribute="trailing" constant="3" id="idF-pY-tae"/>
+                                                        <constraint firstItem="S3T-MZ-Zqd" firstAttribute="leading" secondItem="mln-DD-x7V" secondAttribute="trailing" constant="80" id="jel-C7-2yL"/>
+                                                        <constraint firstItem="wkH-eC-jBk" firstAttribute="leading" secondItem="S3T-MZ-Zqd" secondAttribute="trailing" constant="12" id="kJc-Rf-6uQ"/>
+                                                        <constraint firstItem="DDJ-hw-Lj8" firstAttribute="leading" secondItem="8uo-VG-d96" secondAttribute="leading" id="maj-SF-H3r"/>
+                                                        <constraint firstItem="wkH-eC-jBk" firstAttribute="centerY" secondItem="aOc-IW-d7G" secondAttribute="centerY" id="nWi-sT-CIe"/>
+                                                        <constraint firstItem="wkH-eC-jBk" firstAttribute="top" secondItem="hIi-2f-drN" secondAttribute="bottom" id="npN-vI-Lcf"/>
+                                                        <constraint firstItem="DDJ-hw-Lj8" firstAttribute="top" secondItem="8uo-VG-d96" secondAttribute="top" id="oPo-8b-Um6"/>
+                                                        <constraint firstItem="8dx-rf-leE" firstAttribute="top" secondItem="hIi-2f-drN" secondAttribute="top" id="ptz-eN-fLh"/>
+                                                        <constraint firstItem="mln-DD-x7V" firstAttribute="leading" secondItem="aOc-IW-d7G" secondAttribute="trailing" id="pzL-41-gMO"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
-                                                <accessibility key="accessibilityConfiguration" identifier="connectionPOSSettingCell"/>
-                                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell1" rowHeight="44" id="ksR-lI-lj2" userLabel="confirmationTimeSettingCell">
-                                                <rect key="frame" x="0.0" y="163.5" width="900" height="44"/>
+                                                <rect key="frame" x="0.0" y="160.5" width="900" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ksR-lI-lj2" id="rs2-dO-IMH">
                                                     <rect key="frame" x="0.0" y="0.0" width="867" height="43.5"/>

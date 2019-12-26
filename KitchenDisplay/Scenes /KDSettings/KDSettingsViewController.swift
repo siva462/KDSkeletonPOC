@@ -105,7 +105,7 @@ class KDSettingsViewController: UIViewController, KDSettingsDisplayLogic
 extension KDSettingsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return 5
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -116,27 +116,38 @@ extension KDSettingsViewController: UITableViewDataSource, UITableViewDelegate {
         
         // セルを取得する
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1", for: indexPath)
+        let ccell = tableView.dequeueReusableCell(withIdentifier: "ConnectionCell", for: indexPath)
+
         // 高さ情報を登録
         let displayedOrder = displayedOrders[indexPath.row]
         let rightLabel = cell.viewWithTag(1) as? UILabel
         let leftLabel = cell.viewWithTag(2) as? UILabel
 
         switch indexPath.section {
-        case 0:
+        case 1:
             rightLabel?.text = displayedOrder.elapsed_time_alert_blue
             leftLabel?.text = "Elapsed time alert(Blue)"
             
-        case 1 :
+        case 2 :
             rightLabel?.text = displayedOrder.elapsed_time_alert_yellow
             leftLabel?.text = "Elapsed time alert(Yellow)"
 
-        case 2:
+        case 3:
             rightLabel?.text = displayedOrder.elapsed_time_alert_red
             leftLabel?.text = "Elapsed time alert(Red)"
-
-        default:
+        case 4:
             rightLabel?.text = displayedOrder.kitchen_printer_filtering
             leftLabel?.text = "Kitchen printer filtering"
+
+        default:
+            let label1 = ccell.viewWithTag(1) as? UILabel
+            let label2 = ccell.viewWithTag(2) as? UILabel
+            let label3 = ccell.viewWithTag(3) as? UILabel
+            label1?.text = displayedOrder.lbl1
+            label2?.text = displayedOrder.lbl2
+            label3?.text = displayedOrder.heading
+
+            return ccell
         }
         
         titleLabel.text = displayedOrder.title
