@@ -19,7 +19,7 @@ protocol KDSettingsDisplayLogic: class
 
 class KDSettingsViewController: UIViewController, KDSettingsDisplayLogic
 {
-  var interactor: KDSettingsBusinessLogic?
+  var interactor: KDSettingsShowData?
   var router: (NSObjectProtocol & KDSettingsRoutingLogic & KDSettingsDataPassing)?
 
   // MARK: Object lifecycle
@@ -97,29 +97,60 @@ class KDSettingsViewController: UIViewController, KDSettingsDisplayLogic
   func displaySomething(viewModel: KDSettings.Something.ViewModel)
   {
     displayedOrders = viewModel.displayedOrders
-    settingTableView.reloadData()
-    
+    //settingTableView.reloadData()
     }
 }
 
 // MARK: UITableViewDataSource
-extension KDSettingsViewController: UITableViewDataSource {
+extension KDSettingsViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 4
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return displayedOrders.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // セルを取得する
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1", for: indexPath)
         // 高さ情報を登録
         let displayedOrder = displayedOrders[indexPath.row]
+        let rightLabel = cell.viewWithTag(1) as? UILabel
+        let leftLabel = cell.viewWithTag(2) as? UILabel
 
-        cell.textLabel?.text = displayedOrder.elapsed_time_alert_blue
+        switch indexPath.section {
+        case 0:
+            rightLabel?.text = displayedOrder.elapsed_time_alert_blue
+            leftLabel?.text = "Elapsed time alert(Blue)"
+            
+        case 1 :
+            rightLabel?.text = displayedOrder.elapsed_time_alert_yellow
+            leftLabel?.text = "Elapsed time alert(Yellow)"
+
+        case 2:
+            rightLabel?.text = displayedOrder.elapsed_time_alert_red
+            leftLabel?.text = "Elapsed time alert(Red)"
+
+        default:
+            rightLabel?.text = displayedOrder.kitchen_printer_filtering
+            leftLabel?.text = "Kitchen printer filtering"
+        }
+        
         titleLabel.text = displayedOrder.title
         backButton.setTitle(displayedOrder.lbl1, for: .normal)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0
+    }
+    
 }
 

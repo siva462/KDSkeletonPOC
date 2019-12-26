@@ -48,14 +48,14 @@
                                         <rect key="frame" x="0.0" y="560" width="940" height="100"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfO-7l-DOX" userLabel="backButton" customClass="KDButton" customModule="KDSkeletonPOC" customModuleProvider="target">
-                                                <rect key="frame" x="370" y="20" width="200" height="60"/>
+                                                <rect key="frame" x="345" y="20" width="250" height="60"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="3P0-1K-lWe"/>
+                                                    <constraint firstAttribute="width" constant="250" id="3P0-1K-lWe"/>
                                                     <constraint firstAttribute="height" constant="60" id="uHa-eU-Cd8"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                                <state key="normal">
+                                                <state key="normal" title="Back to the manin menu">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -81,7 +81,7 @@
                                         </constraints>
                                         <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="108" id="LOh-Ho-lwH" userLabel="connectionSettingCell" customClass="KDConnectionSettingCell" customModule="KDSkeletonPOC" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="108" id="LOh-Ho-lwH" userLabel="connectionSettingCell">
                                                 <rect key="frame" x="0.0" y="55.5" width="900" height="108"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LOh-Ho-lwH" id="hZa-pi-F9c">
@@ -91,47 +91,45 @@
                                                 <accessibility key="accessibilityConfiguration" identifier="connectionPOSSettingCell"/>
                                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConfirmationTimeSettingCell" rowHeight="44" id="ksR-lI-lj2" userLabel="confirmationTimeSettingCell" customClass="KDAlertTimeSettingCell" customModule="KDSkeletonPOC" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell1" rowHeight="44" id="ksR-lI-lj2" userLabel="confirmationTimeSettingCell">
                                                 <rect key="frame" x="0.0" y="163.5" width="900" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ksR-lI-lj2" id="rs2-dO-IMH">
-                                                    <rect key="frame" x="0.0" y="0.0" width="900" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="867" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" verticalHuggingPriority="251" text="Elapsed time alert(Blue)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eB8-Kh-CNt">
+                                                            <rect key="frame" x="8" y="0.0" width="801" height="44.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" id="mKP-jB-pVm"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVe-5G-fRC">
+                                                            <rect key="frame" x="817" y="0.0" width="42" height="44.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" id="WzF-LI-Djj"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="hVe-5G-fRC" secondAttribute="bottom" id="0wM-H3-osW"/>
+                                                        <constraint firstAttribute="bottom" secondItem="eB8-Kh-CNt" secondAttribute="bottom" id="Fjh-kG-Ml0"/>
+                                                        <constraint firstAttribute="trailing" secondItem="hVe-5G-fRC" secondAttribute="trailing" constant="8" id="LWA-Qt-lLd"/>
+                                                        <constraint firstItem="hVe-5G-fRC" firstAttribute="top" secondItem="rs2-dO-IMH" secondAttribute="top" id="VtH-Tw-pQb"/>
+                                                        <constraint firstItem="eB8-Kh-CNt" firstAttribute="top" secondItem="rs2-dO-IMH" secondAttribute="top" id="agz-I7-74E"/>
+                                                        <constraint firstItem="eB8-Kh-CNt" firstAttribute="leading" secondItem="rs2-dO-IMH" secondAttribute="leading" constant="8" id="gOy-i4-AbD"/>
+                                                        <constraint firstItem="hVe-5G-fRC" firstAttribute="leading" secondItem="eB8-Kh-CNt" secondAttribute="trailing" constant="8" id="xFB-hh-Djh"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="elapsedTimeAlertBlue"/>
                                                 </userDefinedRuntimeAttributes>
-                                            </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AttentionTimeSettingCell" rowHeight="44" id="rQg-ja-d8H" userLabel="attentionTimeSettingCell" customClass="KDAlertTimeSettingCell" customModule="KDSkeletonPOC" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="207.5" width="900" height="44"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rQg-ja-d8H" id="JuZ-eX-4RI">
-                                                    <rect key="frame" x="0.0" y="0.0" width="900" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </tableViewCellContentView>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="elapsedTimeAlertYellow"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WarningTimeSettingCell" rowHeight="44" id="hu4-Ck-BI3" userLabel="warningTimeSettingCell" customClass="KDAlertTimeSettingCell" customModule="KDSkeletonPOC" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="251.5" width="900" height="44"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hu4-Ck-BI3" id="uvA-IY-9ac">
-                                                    <rect key="frame" x="0.0" y="0.0" width="900" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </tableViewCellContentView>
-                                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="elapsedTimeAlertRed"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="KitchenPrinterFilterSettingCell" rowHeight="44" id="9Ng-v6-mt4" userLabel="kitchenPrinterFilterSettingCell" customClass="KDKitchenPrinterFilterSettingCell" customModule="KDSkeletonPOC" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="295.5" width="900" height="44"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Ng-v6-mt4" id="klk-3u-Ghr">
-                                                    <rect key="frame" x="0.0" y="0.0" width="900" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
                                         <sections/>

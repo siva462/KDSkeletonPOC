@@ -12,7 +12,7 @@
 
 import UIKit
 
-protocol KDSettingsBusinessLogic
+protocol KDSettingsShowData
 {
   func fetchSettingsdata(request: KDSettings.Something.Request)
 }
@@ -22,7 +22,7 @@ protocol KDSettingsDataStore
     var settingsObj: [Settings]? { get }
 }
 
-class KDSettingsInteractor: KDSettingsBusinessLogic, KDSettingsDataStore
+class KDSettingsInteractor: KDSettingsShowData, KDSettingsDataStore
 {
     var settingsObj: [Settings]?
     
