@@ -1,6 +1,6 @@
 //
 //  KDSettingsModels.swift
-//  KDSkeletonPOC
+//  KitchenDisplay
 //
 //  Created by Wipro on 24/12/19.
 //  Copyright (c) 2019 wipro. All rights reserved.

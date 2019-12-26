@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		43C6F67F23B1E88C00DE61BA /* KDSkeletonPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDSkeletonPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43C6F67F23B1E88C00DE61BA /* KitchenDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitchenDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C6F68223B1E88C00DE61BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43C6F68923B1E8AA00DE61BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43C6F68C23B1E8AA00DE61BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,10 +58,25 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		430D7CAE23B4B54600F99993 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		430D7CAF23B4B58200F99993 /* Scenes  */ = {
+			isa = PBXGroup;
+			children = (
+				43C6F69423B1E8C000DE61BA /* KDSettings */,
+			);
+			path = "Scenes ";
+			sourceTree = "<group>";
+		};
 		43C6F67623B1E88C00DE61BA = {
 			isa = PBXGroup;
 			children = (
-				43C6F68123B1E88C00DE61BA /* KDSkeletonPOC */,
+				43C6F68123B1E88C00DE61BA /* KitchenDisplay */,
 				43C6F68023B1E88C00DE61BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,23 +84,24 @@
 		43C6F68023B1E88C00DE61BA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				43C6F67F23B1E88C00DE61BA /* KDSkeletonPOC.app */,
+				43C6F67F23B1E88C00DE61BA /* KitchenDisplay.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		43C6F68123B1E88C00DE61BA /* KDSkeletonPOC */ = {
+		43C6F68123B1E88C00DE61BA /* KitchenDisplay */ = {
 			isa = PBXGroup;
 			children = (
 				43C6F68223B1E88C00DE61BA /* AppDelegate.swift */,
 				43C6F6A123B2024B00DE61BA /* Main.storyboard */,
+				430D7CAE23B4B54600F99993 /* Utility */,
 				430D7CAD23B4841300F99993 /* Models */,
-				43C6F69423B1E8C000DE61BA /* KDSettings */,
+				430D7CAF23B4B58200F99993 /* Scenes  */,
 				43C6F68923B1E8AA00DE61BA /* Assets.xcassets */,
 				43C6F68B23B1E8AA00DE61BA /* LaunchScreen.storyboard */,
 				43C6F68E23B1E8AA00DE61BA /* Info.plist */,
 			);
-			path = KDSkeletonPOC;
+			path = KitchenDisplay;
 			sourceTree = "<group>";
 		};
 		43C6F69423B1E8C000DE61BA /* KDSettings */ = {
@@ -112,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		43C6F67E23B1E88C00DE61BA /* KDSkeletonPOC */ = {
+		43C6F67E23B1E88C00DE61BA /* KitchenDisplay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 43C6F69123B1E8AA00DE61BA /* Build configuration list for PBXNativeTarget "KDSkeletonPOC" */;
+			buildConfigurationList = 43C6F69123B1E8AA00DE61BA /* Build configuration list for PBXNativeTarget "KitchenDisplay" */;
 			buildPhases = (
 				43C6F67B23B1E88C00DE61BA /* Sources */,
 				43C6F67C23B1E88C00DE61BA /* Frameworks */,
@@ -124,9 +140,9 @@
 			);
 			dependencies = (
 			);
-			name = KDSkeletonPOC;
+			name = KitchenDisplay;
 			productName = KDSkeletonPOC;
-			productReference = 43C6F67F23B1E88C00DE61BA /* KDSkeletonPOC.app */;
+			productReference = 43C6F67F23B1E88C00DE61BA /* KitchenDisplay.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -144,7 +160,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 43C6F67A23B1E88C00DE61BA /* Build configuration list for PBXProject "KDSkeletonPOC" */;
+			buildConfigurationList = 43C6F67A23B1E88C00DE61BA /* Build configuration list for PBXProject "KitchenDisplay" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -157,7 +173,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				43C6F67E23B1E88C00DE61BA /* KDSkeletonPOC */,
+				43C6F67E23B1E88C00DE61BA /* KitchenDisplay */,
 			);
 		};
 /* End PBXProject section */
@@ -329,13 +345,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D23VUK52AN;
-				INFOPLIST_FILE = KDSkeletonPOC/Info.plist;
+				INFOPLIST_FILE = KitchenDisplay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = wipropoc.KDSkeletonPOC;
+				PRODUCT_BUNDLE_IDENTIFIER = wipropoc.KitchenDisplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -350,13 +366,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D23VUK52AN;
-				INFOPLIST_FILE = KDSkeletonPOC/Info.plist;
+				INFOPLIST_FILE = KitchenDisplay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = wipropoc.KDSkeletonPOC;
+				PRODUCT_BUNDLE_IDENTIFIER = wipropoc.KitchenDisplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -367,7 +383,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		43C6F67A23B1E88C00DE61BA /* Build configuration list for PBXProject "KDSkeletonPOC" */ = {
+		43C6F67A23B1E88C00DE61BA /* Build configuration list for PBXProject "KitchenDisplay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				43C6F68F23B1E8AA00DE61BA /* Debug */,
@@ -376,7 +392,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		43C6F69123B1E8AA00DE61BA /* Build configuration list for PBXNativeTarget "KDSkeletonPOC" */ = {
+		43C6F69123B1E8AA00DE61BA /* Build configuration list for PBXNativeTarget "KitchenDisplay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				43C6F69223B1E8AA00DE61BA /* Debug */,

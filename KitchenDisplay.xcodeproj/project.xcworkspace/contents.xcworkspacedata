@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:KDSkeletonPOC.xcodeproj">
+      location = "self:/Users/wipro/Desktop/KPOC/KitchenDisplay.xcodeproj">
    </FileRef>
 </Workspace>

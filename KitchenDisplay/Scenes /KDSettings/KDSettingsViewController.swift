@@ -1,6 +1,6 @@
 //
 //  KDSettingsViewController.swift
-//  KDSkeletonPOC
+//  KitchenDisplay
 //
 //  Created by Wipro on 24/12/19.
 //  Copyright (c) 2019 wipro. All rights reserved.
@@ -140,7 +140,6 @@ extension KDSettingsViewController: UITableViewDataSource, UITableViewDelegate {
         }
         
         titleLabel.text = displayedOrder.title
-        backButton.setTitle(displayedOrder.lbl1, for: .normal)
         return cell
     }
     
