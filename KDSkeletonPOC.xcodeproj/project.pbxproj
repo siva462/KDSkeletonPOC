@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43C6F68323B1E88C00DE61BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C6F68223B1E88C00DE61BA /* AppDelegate.swift */; };
+		43C6F68A23B1E8AA00DE61BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43C6F68923B1E8AA00DE61BA /* Assets.xcassets */; };
+		43C6F68D23B1E8AA00DE61BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C6F68B23B1E8AA00DE61BA /* LaunchScreen.storyboard */; };
+		43C6F69B23B1E92200DE61BA /* KDSettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C6F69523B1E92200DE61BA /* KDSettingsPresenter.swift */; };
+		43C6F69C23B1E92200DE61BA /* KDSettingsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C6F69623B1E92200DE61BA /* KDSettingsWorker.swift */; };
+		43C6F69D23B1E92200DE61BA /* KDSettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C6F69723B1E92200DE61BA /* KDSettingsRouter.swift */; };
+		43C6F69E23B1E92200DE61BA /* KDSettingsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C6F69823B1E92200DE61BA /* KDSettingsModels.swift */; };
+		43C6F69F23B1E92200DE61BA /* KDSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C6F69923B1E92200DE61BA /* KDSettingsViewController.swift */; };
+		43C6F6A023B1E92200DE61BA /* KDSettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C6F69A23B1E92200DE61BA /* KDSettingsInteractor.swift */; };
+		43C6F6A223B2024B00DE61BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C6F6A123B2024B00DE61BA /* Main.storyboard */; };
+		43C6F6A523B20E8100DE61BA /* settings.json in Resources */ = {isa = PBXBuildFile; fileRef = 43C6F6A423B20E8000DE61BA /* settings.json */; };
+		43C6F6A723B2159C00DE61BA /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C6F6A623B2159C00DE61BA /* SettingsModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43C6F67F23B1E88C00DE61BA /* KDSkeletonPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDSkeletonPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43C6F68223B1E88C00DE61BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43C6F68923B1E8AA00DE61BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43C6F68C23B1E8AA00DE61BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43C6F68E23B1E8AA00DE61BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43C6F69523B1E92200DE61BA /* KDSettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDSettingsPresenter.swift; sourceTree = "<group>"; };
+		43C6F69623B1E92200DE61BA /* KDSettingsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDSettingsWorker.swift; sourceTree = "<group>"; };
+		43C6F69723B1E92200DE61BA /* KDSettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDSettingsRouter.swift; sourceTree = "<group>"; };
+		43C6F69823B1E92200DE61BA /* KDSettingsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDSettingsModels.swift; sourceTree = "<group>"; };
+		43C6F69923B1E92200DE61BA /* KDSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDSettingsViewController.swift; sourceTree = "<group>"; };
+		43C6F69A23B1E92200DE61BA /* KDSettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDSettingsInteractor.swift; sourceTree = "<group>"; };
+		43C6F6A123B2024B00DE61BA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		43C6F6A423B20E8000DE61BA /* settings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = settings.json; sourceTree = "<group>"; };
+		43C6F6A623B2159C00DE61BA /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43C6F67C23B1E88C00DE61BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		430D7CAD23B4841300F99993 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				43C6F6A623B2159C00DE61BA /* SettingsModel.swift */,
+				43C6F6A323B20E3A00DE61BA /* Jsonfile */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		43C6F67623B1E88C00DE61BA = {
+			isa = PBXGroup;
+			children = (
+				43C6F68123B1E88C00DE61BA /* KDSkeletonPOC */,
+				43C6F68023B1E88C00DE61BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43C6F68023B1E88C00DE61BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43C6F67F23B1E88C00DE61BA /* KDSkeletonPOC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43C6F68123B1E88C00DE61BA /* KDSkeletonPOC */ = {
+			isa = PBXGroup;
+			children = (
+				43C6F68223B1E88C00DE61BA /* AppDelegate.swift */,
+				43C6F6A123B2024B00DE61BA /* Main.storyboard */,
+				430D7CAD23B4841300F99993 /* Models */,
+				43C6F69423B1E8C000DE61BA /* KDSettings */,
+				43C6F68923B1E8AA00DE61BA /* Assets.xcassets */,
+				43C6F68B23B1E8AA00DE61BA /* LaunchScreen.storyboard */,
+				43C6F68E23B1E8AA00DE61BA /* Info.plist */,
+			);
+			path = KDSkeletonPOC;
+			sourceTree = "<group>";
+		};
+		43C6F69423B1E8C000DE61BA /* KDSettings */ = {
+			isa = PBXGroup;
+			children = (
+				43C6F69923B1E92200DE61BA /* KDSettingsViewController.swift */,
+				43C6F69523B1E92200DE61BA /* KDSettingsPresenter.swift */,
+				43C6F69A23B1E92200DE61BA /* KDSettingsInteractor.swift */,
+				43C6F69623B1E92200DE61BA /* KDSettingsWorker.swift */,
+				43C6F69723B1E92200DE61BA /* KDSettingsRouter.swift */,
+				43C6F69823B1E92200DE61BA /* KDSettingsModels.swift */,
+			);
+			path = KDSettings;
+			sourceTree = "<group>";
+		};
+		43C6F6A323B20E3A00DE61BA /* Jsonfile */ = {
+			isa = PBXGroup;
+			children = (
+				43C6F6A423B20E8000DE61BA /* settings.json */,
+			);
+			path = Jsonfile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43C6F67E23B1E88C00DE61BA /* KDSkeletonPOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43C6F69123B1E8AA00DE61BA /* Build configuration list for PBXNativeTarget "KDSkeletonPOC" */;
+			buildPhases = (
+				43C6F67B23B1E88C00DE61BA /* Sources */,
+				43C6F67C23B1E88C00DE61BA /* Frameworks */,
+				43C6F67D23B1E88C00DE61BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KDSkeletonPOC;
+			productName = KDSkeletonPOC;
+			productReference = 43C6F67F23B1E88C00DE61BA /* KDSkeletonPOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43C6F67723B1E88C00DE61BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = wipro;
+				TargetAttributes = {
+					43C6F67E23B1E88C00DE61BA = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 43C6F67A23B1E88C00DE61BA /* Build configuration list for PBXProject "KDSkeletonPOC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43C6F67623B1E88C00DE61BA;
+			productRefGroup = 43C6F68023B1E88C00DE61BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43C6F67E23B1E88C00DE61BA /* KDSkeletonPOC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43C6F67D23B1E88C00DE61BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C6F68D23B1E8AA00DE61BA /* LaunchScreen.storyboard in Resources */,
+				43C6F68A23B1E8AA00DE61BA /* Assets.xcassets in Resources */,
+				43C6F6A523B20E8100DE61BA /* settings.json in Resources */,
+				43C6F6A223B2024B00DE61BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43C6F67B23B1E88C00DE61BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C6F6A723B2159C00DE61BA /* SettingsModel.swift in Sources */,
+				43C6F6A023B1E92200DE61BA /* KDSettingsInteractor.swift in Sources */,
+				43C6F69B23B1E92200DE61BA /* KDSettingsPresenter.swift in Sources */,
+				43C6F69C23B1E92200DE61BA /* KDSettingsWorker.swift in Sources */,
+				43C6F69F23B1E92200DE61BA /* KDSettingsViewController.swift in Sources */,
+				43C6F69D23B1E92200DE61BA /* KDSettingsRouter.swift in Sources */,
+				43C6F69E23B1E92200DE61BA /* KDSettingsModels.swift in Sources */,
+				43C6F68323B1E88C00DE61BA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		43C6F68B23B1E8AA00DE61BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43C6F68C23B1E8AA00DE61BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43C6F68F23B1E8AA00DE61BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43C6F69023B1E8AA00DE61BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43C6F69223B1E8AA00DE61BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D23VUK52AN;
+				INFOPLIST_FILE = KDSkeletonPOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wipropoc.KDSkeletonPOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43C6F69323B1E8AA00DE61BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D23VUK52AN;
+				INFOPLIST_FILE = KDSkeletonPOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wipropoc.KDSkeletonPOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43C6F67A23B1E88C00DE61BA /* Build configuration list for PBXProject "KDSkeletonPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43C6F68F23B1E8AA00DE61BA /* Debug */,
+				43C6F69023B1E8AA00DE61BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43C6F69123B1E8AA00DE61BA /* Build configuration list for PBXNativeTarget "KDSkeletonPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43C6F69223B1E8AA00DE61BA /* Debug */,
+				43C6F69323B1E8AA00DE61BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43C6F67723B1E88C00DE61BA /* Project object */;
+}

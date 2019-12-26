@@ -1,0 +1,10 @@
+{
+  "elapsed_time_alert_blue": "5Min",
+  "elapsed_time_alert_yellow": "10Min",
+  "elapsed_time_alert_red": "20Min",
+  "kitchen_printer_filtering": "No setting",
+  "title": "Kitchen display settings",
+  "lbl1": "Start,",
+  "lbl2": "Connect,",
+  "heading": "“POS application(ipad)"
+  }

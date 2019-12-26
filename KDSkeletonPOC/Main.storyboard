@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="viz-Ua-E0G">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="UQN-mS-ahx">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="viz-Ua-E0G" customClass="KDSettingsViewController" customModule="KDSkeletonPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2mY-bC-lMd">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rLa-hp-22W" userLabel="settingView" customClass="KDView" customModule="KDSkeletonPOC" customModuleProvider="target">
+                                <rect key="frame" x="42" y="54" width="940" height="660"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgB-9B-QvX" userLabel="headerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="940" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGY-LA-Zz3" userLabel="titleLabel" customClass="KDLabel" customModule="KDSkeletonPOC" customModuleProvider="target">
+                                                <rect key="frame" x="449" y="19.5" width="42" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="pyc-Cl-Z0A"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="KDSetting"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="VGY-LA-Zz3" firstAttribute="centerX" secondItem="lgB-9B-QvX" secondAttribute="centerX" id="0BQ-LS-IbF"/>
+                                            <constraint firstAttribute="height" constant="60" id="2HF-LF-L7d"/>
+                                            <constraint firstAttribute="width" constant="940" id="a3I-U5-bLU"/>
+                                            <constraint firstItem="VGY-LA-Zz3" firstAttribute="centerY" secondItem="lgB-9B-QvX" secondAttribute="centerY" id="adA-wR-ysO"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cx-Fe-6Si" userLabel="footerView">
+                                        <rect key="frame" x="0.0" y="560" width="940" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfO-7l-DOX" userLabel="backButton" customClass="KDButton" customModule="KDSkeletonPOC" customModuleProvider="target">
+                                                <rect key="frame" x="370" y="20" width="200" height="60"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="3P0-1K-lWe"/>
+                                                    <constraint firstAttribute="height" constant="60" id="uHa-eU-Cd8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleForNormal" value="backMainView"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="wfO-7l-DOX" firstAttribute="centerY" secondItem="0cx-Fe-6Si" secondAttribute="centerY" id="UUw-MV-ooa"/>
+                                            <constraint firstItem="wfO-7l-DOX" firstAttribute="centerX" secondItem="0cx-Fe-6Si" secondAttribute="centerX" id="jfe-ds-kxE"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wlx-O7-fKh" userLabel="settingTableView">
+                                        <rect key="frame" x="20" y="62" width="900" height="500"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="500" id="7eN-ux-2Dy"/>
+                                            <constraint firstAttribute="width" constant="900" id="zdW-aN-00s"/>
+                                        </constraints>
+                                        <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="108" id="LOh-Ho-lwH" userLabel="connectionSettingCell" customClass="KDConnectionSettingCell" customModule="KDSkeletonPOC" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="55.5" width="900" height="108"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LOh-Ho-lwH" id="hZa-pi-F9c">
+                                                    <rect key="frame" x="0.0" y="0.0" width="900" height="107.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                                <accessibility key="accessibilityConfiguration" identifier="connectionPOSSettingCell"/>
+                                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </tableViewCell>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConfirmationTimeSettingCell" rowHeight="44" id="ksR-lI-lj2" userLabel="confirmationTimeSettingCell" customClass="KDAlertTimeSettingCell" customModule="KDSkeletonPOC" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="163.5" width="900" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ksR-lI-lj2" id="rs2-dO-IMH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="900" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="elapsedTimeAlertBlue"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </tableViewCell>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AttentionTimeSettingCell" rowHeight="44" id="rQg-ja-d8H" userLabel="attentionTimeSettingCell" customClass="KDAlertTimeSettingCell" customModule="KDSkeletonPOC" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="207.5" width="900" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rQg-ja-d8H" id="JuZ-eX-4RI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="900" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="elapsedTimeAlertYellow"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </tableViewCell>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WarningTimeSettingCell" rowHeight="44" id="hu4-Ck-BI3" userLabel="warningTimeSettingCell" customClass="KDAlertTimeSettingCell" customModule="KDSkeletonPOC" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="251.5" width="900" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hu4-Ck-BI3" id="uvA-IY-9ac">
+                                                    <rect key="frame" x="0.0" y="0.0" width="900" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="elapsedTimeAlertRed"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </tableViewCell>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="KitchenPrinterFilterSettingCell" rowHeight="44" id="9Ng-v6-mt4" userLabel="kitchenPrinterFilterSettingCell" customClass="KDKitchenPrinterFilterSettingCell" customModule="KDSkeletonPOC" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="295.5" width="900" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Ng-v6-mt4" id="klk-3u-Ghr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="900" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <sections/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="viz-Ua-E0G" id="jYE-Va-dv4"/>
+                                            <outlet property="delegate" destination="viz-Ua-E0G" id="YRi-dg-EoU"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Wlx-O7-fKh" firstAttribute="top" secondItem="lgB-9B-QvX" secondAttribute="bottom" id="5Br-le-eKE"/>
+                                    <constraint firstAttribute="trailing" secondItem="0cx-Fe-6Si" secondAttribute="trailing" id="QOi-0V-vfR"/>
+                                    <constraint firstItem="lgB-9B-QvX" firstAttribute="top" secondItem="rLa-hp-22W" secondAttribute="top" id="QX0-XV-P20"/>
+                                    <constraint firstItem="Wlx-O7-fKh" firstAttribute="centerX" secondItem="rLa-hp-22W" secondAttribute="centerX" id="Ssv-Jk-hLc"/>
+                                    <constraint firstItem="0cx-Fe-6Si" firstAttribute="leading" secondItem="rLa-hp-22W" secondAttribute="leading" id="f3m-VL-GmI"/>
+                                    <constraint firstAttribute="bottom" secondItem="0cx-Fe-6Si" secondAttribute="bottom" id="gjd-gJ-Tyx"/>
+                                    <constraint firstAttribute="width" constant="940" id="hvT-GJ-gZM"/>
+                                    <constraint firstItem="0cx-Fe-6Si" firstAttribute="top" secondItem="Wlx-O7-fKh" secondAttribute="bottom" id="i1c-xm-FJb"/>
+                                    <constraint firstAttribute="height" constant="660" id="py8-d6-GPQ"/>
+                                    <constraint firstItem="lgB-9B-QvX" firstAttribute="leading" secondItem="rLa-hp-22W" secondAttribute="leading" id="yNB-DU-yJP"/>
+                                    <constraint firstAttribute="trailing" secondItem="lgB-9B-QvX" secondAttribute="trailing" id="zo3-lo-eK3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rLa-hp-22W" firstAttribute="centerX" secondItem="2mY-bC-lMd" secondAttribute="centerX" id="MXB-FO-VLx"/>
+                            <constraint firstItem="rLa-hp-22W" firstAttribute="centerY" secondItem="2mY-bC-lMd" secondAttribute="centerY" id="Qx0-QI-8oj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J7P-iQ-W8b"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="wfO-7l-DOX" id="epk-BR-owL"/>
+                        <outlet property="footerView" destination="0cx-Fe-6Si" id="kzz-qv-Lj8"/>
+                        <outlet property="headerView" destination="lgB-9B-QvX" id="H4s-uv-N2b"/>
+                        <outlet property="settingTableView" destination="Wlx-O7-fKh" id="dso-oW-Qbi"/>
+                        <outlet property="titleLabel" destination="VGY-LA-Zz3" id="Epg-6K-rsi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MIc-QV-6yc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-280.078125" y="-258.59375"/>
+        </scene>
+    </scenes>
+</document>
